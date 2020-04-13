@@ -203,7 +203,9 @@ rules-based aritificial intelligence is used to generate and deploy "smart contr
 
 Best Practices Topic: Ensuring Quality of Automated Legal Services 
 
-Required Reading: 	[Substantive Legal Software Quality: A Gathering Storm?](http://delivery.acm.org/10.1145/3330000/3326706/p52-lauritsen.pdf?ip=142.244.5.174&id=3326706&acc=ACTIVE%20SERVICE&key=FD0067F557510FFB%2EE7ED0E691902343F%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1570231240_3dd3c719bf0b938c88c55623a42c8ef7)  
+Required Reading:
+
+* [Substantive Legal Software Quality: A Gathering Storm?](http://delivery.acm.org/10.1145/3330000/3326706/p52-lauritsen.pdf?ip=142.244.5.174&id=3326706&acc=ACTIVE%20SERVICE&key=FD0067F557510FFB%2EE7ED0E691902343F%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1570231240_3dd3c719bf0b938c88c55623a42c8ef7)  
 
 #### Class 9 - Date TBD
 
@@ -216,9 +218,10 @@ relevant to lawsuits.
 Best Practices Topic: Privacy and Automated Legal Services
 
 Required Reading:
+
 * [Improving Privacy Practices for Legal Apps:  A Best Practices Guide](https://commonlaw.uottawa.ca/sites/commonlaw.uottawa.ca/files/opc_contributions_program_salyzyn_et_al_best_practices_guide_march_2019.pdf)
 
-Project: 		Design Specifications due by the end of this class.
+Major Project: 		Design Specifications due by the end of this class.
 
 
 #### Class 10 - Date TBD
@@ -228,6 +231,8 @@ Technical Topic: Natural Language Processing
 In this class the students will be introduced to tools that are designed to automatically read and recognize parts of legal documents such as contracts, to simplify tasks such as due diligence review.
 
 Best Practices Topic: Automated Legal Reasoning and Bias 
+
+Required Reading:
 
 * [Early Predictability of Asylum Court Decisions](https://doi.org/10.1145/3086512.3086537)
 
@@ -242,6 +247,7 @@ proximity between disputants and the people to whom those disputes are referred.
 Best Practices Topic: Accessibility, Diversity, and Inclusion in Automated Legal Services
 
 Required Reading:
+
 * [Law Firm Accessibility Standards](https://lawyerist.com/client-service/accessibility-standards/)
 
 
