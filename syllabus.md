@@ -1,9 +1,9 @@
 # Syllabus
-**Law589 - Coding the Law, Fall 2020 (Section TBD)
+**Law 589 - "Coding the Law", Fall 2020 (Section TBD)  
 University of Alberta Faculty of Law  
-Jason Morris, BA, LLB, LLM (almost)  
+Jason Morris, BA, LLB, LLM (anticipated)  
 9:00am-11:50am Fridays  
-Room: TBD
+Room: TBD**
 
 ## Course Objectives
 Law is not immune to the technological changes that are occurring in the rest of society. As has happened in every other sector of the economy, globalization and technology will result in an increased automation of legal services. Indeed, because of the severity of the access to justice problem in Canada and other jurisdictions, the impetus to automate legal services is stronger than in many areas.
@@ -40,7 +40,6 @@ Technologies surveyed will include:
 * automated client interview systems
 * document automation tools
 * online dispute resolution tools
-
 
 Most exciting, the course will provide law students with the opportunity and skills to design and implement, in collaboration with a real or simulated client organization, an automated legal service using user-friendly, modern, free, open-source technology.
 
