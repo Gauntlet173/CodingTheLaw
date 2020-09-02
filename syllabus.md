@@ -14,7 +14,7 @@ In the future lawyers will be called upon to advise their clients and their prac
 
 Confidence with learning and using technology is a transferable skill. It allows a lawyer to take advantage of more efficient practice models, supporting the lawyer’s opportunity to practice law independently. This can have beneficial effects for work-life balance for young lawyers by making solo practice a realistic possibility, and could as a result increase equity and improve health among the profession as a whole. The importance of the effective use of technology in legal practice has also been reinforced by recent events surround the Covid-19 pandemic.
 
-This course will *not* provide the law student with experience using the technologies they are most likely to be exposed to in practice. Instead, this course is designed to give law students an introduction to the types of *technologies being used for automating legal services* now and in the near future, their strengths, their weaknesses, and the trends in their development going into the future.
+**This course will *not* provide the law student with experience using the technologies they are most likely to be exposed to in practice. Instead, this course is designed to give law students an introduction to the types of *technologies being used for automating legal services* now and in the near future, their strengths, their weaknesses, and the trends in their development going into the future.**
 
 The Course has three primary objectives:
 
@@ -105,32 +105,36 @@ For projects that do not have an external organization involved, the instructor 
 
 ## Iron Tech Lawyer Invitational
 
-The Georgetown Law school at Georgetown Tech in Washington DC has hosted, for the last several years, a competition among students who are building access to justice applications using technology or data science. For the first time, in 2019, the competition was made an invitational for any English-language post-secondary institutions. Students from the Coding the Law course represented the University of Alberta Faculty of Law in the Spring 2020 edition of the competition.
+The Georgetown Law school at Georgetown Tech in Washington DC has hosted, for the last several years, a competition among students who are building access to justice applications using technology or data science. In 2019, the competition was made an invitational for any English-language post-secondary institutions. Students from the Coding the Law course represented the University of Alberta Faculty of Law in the inaugural Spring 2020 edition of the competition.
 
-The Major Project portion of the course is designed to meet the requirements for submission as an entry in the Iron Tech Lawyer Invitational. Students who are willing to do so may apply to be considered for participation in the contest. Only one project from any institution can be sent. If there is more than one student group interested in competing, we will make arrangements to have the pitches and the projects judged, and winner selected among them who will represent the University of Alberta in the competition.
+The Major Project portion of the course is designed to meet the requirements for submission as an entry in the Iron Tech Lawyer Invitational *if students choose to use an external client*. Students who are interested in representing the University of Alberta at this event should advise the instructor as soon as possible. Only one project from any institution can be sent. If there is more than one student group interested in competing, we will make arrangements to have the pitches and the projects judged, and a representative project selected from among them.
 
 Details on the competition are at https://www.georgetowntech.org/irontechlawyer.
 
 Georgetown does not provide funding for travel and accommodations. Funding may be obtained through various University programmes, or arranged privately by the students. Canadian Legal Technology companies have indicated a willingness to participate in funding Coding the Law students to attend the competition in the past.
+
+**NB**: Due to the Covid-19 pandemic, the 2020/2021 Iron Tech Lawyer Invitational will be held as a virtual event.
 
 ## Course Schedule
 The following schedule is tentative, and subject to change.  The technical learning assignment listed for each class will be discussed during that class and is due by the start of the following class.
 
 ### Phase 1 - Docassemble Technical Learning
 
-#### Class 1 - Introduction to the Course, Docassemble Basics, Critical Resources - Date TBD
+#### Class 1 - Introduction to the Course, Docassemble Basics, Critical Resources - September 11, 2020
 
 The purpose of this class is to introduce you to the structure and expectations of the course, and provide you with the technical tools and resources you will need to participate in the Technical Learning Assignments. You will learn everything you need to know to complete the first technical learning assignment. You will more than likely complete that assignment during class, and if not will be given the resources to complete it over the course of the week.
 
 Technical Learning:	Assignment 1
 
-#### Class 2 - Docassemble Fundamentals - Date TBD
+#### Class 2 - Docassemble Fundamentals - September 18, 2020
 
 In this class you will be introduced to the method that Docassemble uses for figuring out which question needs to be asked next. You will also be introduced to the tools and techniques that are used to help understand what Docassemble is doing under the hood. You will learn what a "Docassemble Object" is, and how they can be used to simplify the process of building an interview. And you will learn about the different sorts of data that a Docassemble interview is capable of collecting.
 
 Technical Learning:	Assignment 2
 
-#### Class 3 - Automated Document Assembly in Docassemble - Date TBD
+#### There is no class on September 25, 2020 due to Career Day
+
+#### Class 3 - Automated Document Assembly in Docassemble - October 2, 2020
 
 In this class you will be taught the three fundamental requirements of a document assembly system: variables, conditionals, and loops.
 You will be shown how to replace text in a Word document with these three components. You will create a simple template using these
@@ -138,7 +142,7 @@ components and create a simple interview that generates a document on the basis 
 
 Technical Learning:	Assignment 3
 
-#### Class 4 - Encoding Legal Rules in Docassemble - Date TBD
+#### Class 4 - Encoding Legal Rules in Docassemble - October 9, 2020
 
 In this class you will be taught how Docassemble uses "code blocks" to allow you to set out legal logic that can be used to answer questions based on existing knowledge instead of asking for information from the user. You will also get instruction on how to use
 code blocks to control the order of questions, and how to modify code blocks and templates so as to exclude questions that are not relevant.
@@ -146,14 +150,14 @@ code blocks to control the order of questions, and how to modify code blocks and
 Technical Learning:	Assignment 4  
 Major Project: 		Students groups should be determined by the end of this class.
 
-#### Class 5 - Advanced Docassemble Lists - Date TBD
+#### Class 5 - Advanced Docassemble Lists - October 16, 2020
 
 In this class you will be shown how you can use Docassemble and Python features in order to collect more complicated information about
 individuals or other objects in a list, and how to do calculations about all of the elements in the list at the same time, called aggregate functions. You will also be shown various basic mathematical features of Python to allow you to complete the technical learning assignment, such as value comparisons.
 
 Technical Learning:	Assignment 5
 
-#### Class 6 - Multi-User Interviews in Docassemble - Date TBD
+#### Class 6 - Multi-User Interviews in Docassemble - October 23, 2020
 
 In this final class of the first phase, you will be shown how to create a multi-user interview, allowing you to create a workflow
 between, for example, a client and a lawyer. You will also learn the security and confidentiality implications of moving away from docassemble's single-user
@@ -179,7 +183,7 @@ Assigned readings are with regard to the best practices topics only. Guest speak
 
 Based on factors like student interest, and the major projects selected, this list of topics and assigned readings are subject to change.
 
-#### Class 7  - Date TBD
+#### Class 7  - October 30, 2020
 
 Technical Topic: Automated Document Generation and Client Interview Tools
 
@@ -193,7 +197,7 @@ Required Reading:
 * [The Montreal Declaration on Open Access to Law](https://www.canlii.org/en/info/mtldeclaration.html)
 * [How I Changed the Law with a GitHub Pull Request](https://arstechnica.com/tech-policy/2018/11/how-i-changed-the-law-with-a-github-pull-request/)
 
-#### Class 8 - Date TBD
+#### Class 8 - November 6, 2020
 
 Technical Topic: "Rules as Code" and "Smart Contracts": Rules-Based Artificial Intelligence
 
@@ -207,7 +211,7 @@ Required Reading:
 
 * [Substantive Legal Software Quality: A Gathering Storm?](http://delivery.acm.org/10.1145/3330000/3326706/p52-lauritsen.pdf?ip=142.244.5.174&id=3326706&acc=ACTIVE%20SERVICE&key=FD0067F557510FFB%2EE7ED0E691902343F%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1570231240_3dd3c719bf0b938c88c55623a42c8ef7)  
 
-#### Class 9 - Date TBD
+#### Class 9 - November 13, 2020
 
 Technical Topic: eDiscovery
 
@@ -224,11 +228,12 @@ Required Reading:
 Major Project: 		Design Specifications due by the end of this class.
 
 
-#### Class 10 - Date TBD
+#### Class 10 - November 20, 2020
 
-Technical Topic: Natural Language Processing
+Technical Topic: Natural Language Processing and Generation
 
-In this class the students will be introduced to tools that are designed to automatically read and recognize parts of legal documents such as contracts, to simplify tasks such as due diligence review.
+In this class the students will be introduced to tools that are designed to automatically read and recognize parts of legal documents such as contracts, to simplify tasks such as due diligence review. Students will also be introduced
+to rules-based and data-based methods of generating natural language for legal purposes.
 
 Best Practices Topic: Automated Legal Reasoning and Bias 
 
@@ -237,7 +242,7 @@ Required Reading:
 * [Early Predictability of Asylum Court Decisions](https://doi.org/10.1145/3086512.3086537)
 
 
-#### Class 11 - Date TBD
+#### Class 11 - November 27, 2020
 
 Technical Topic: Online Dispute Resolution
 
@@ -251,11 +256,7 @@ Required Reading:
 * [Law Firm Accessibility Standards](https://lawyerist.com/client-service/accessibility-standards/)
 
 
-#### Class 12 - “Hackathon” - Date TBD
-
-This class is reserved for students to come together and put finishing touches on their major projects, with the assistance of one another and the course instructor, if required.
-
-#### Class 13 - "Pitches" - Date TBD
+#### Class 12 - "Pitches" - December 4, 2020
 
 Project: All major projects must be submitted to the instructor electronically in their final version by the start of this class.
 
@@ -266,24 +267,36 @@ This class will be reserved for students to make their final project presentatio
 Time will be set aside in each class to address the technical learning assignment set for the week. You are not expected to have read technical resource material in advance.
 
 Extensive documentation on Docassemble is available at https://docassemble.org/docs.
-Questions are regularly asked and answered at https://docassemble.slack.com in the #questions channel. Because of the large number of law schools providing training on Docasesmble, there is now a #student-questions channel, that will be populated mostly with law school students and instructors. A specific channel will also be created specifically for each section of the course.
+Questions are regularly asked and answered at https://docassemble.slack.com in the #questions channel. Because of the large number of law schools providing training on Docasesmble, there is now a #student-questions channel, that will be populated mostly with law school students and instructors.
 Documentation for Python can be found at https://www.python.org/doc/.
 And remember, when all else fails... Google is your friend.
 
 ## Technical Learning Assignments
 
-You are free to pursue these at your own pace if the schedule is too slow for you. They are scheduled to ensure that you have all the required Docassemble skills in order to complete the major project by the end of the course. The assignments are cumulative. Each assumes that you understand how to do the prior assignment.
+You are free to pursue these at your own pace if the schedule is too slow for you. They are scheduled to ensure that you have all the required Docassemble skills in order to complete the major project by the end of the course.
 
-Each week, in class, you will have the opportunity to follow along in an exercise that implements the new skills during class. Your technical assignment for the week is to integrate those new skills into an interview that you will be improving each week.
+Each week, there will be two exercises. The first is a very small demonstration project 
+that implements a new skill or feature in isolation. You are encouraged to do these demonstration projects yourselves as a
+learning exercise. But implementing the demonstration project is not mandatory, and they are not graded. All students
+will be provided with the source code for the demonstration project, and an explanation of how it works, in class.
 
-"Submitting" the Technical Learning Assignments is done by:
+The second exercise each week is your "Technical Learning Assignment." This exercise is mandatory, and graded.
 
-* uploading the code to a GitHub repository to which the instructor has access, and
-* installing your interview on the class Docassemble server at an address the instructor has been given
+The Technical Learning Assignments are cumulative. Over the course of six weeks, you will be improving the same project
+by adding features to it that were demonstrated that week. As such, each week's Technical Learning Assignment can only be completed if you have completed the previous weeks' assignments.
 
-You will be shown how to do these things in the first class. Note that if the address for your GitHub repository and your interview does not change from week to week, there is no need to notify your instructor when you are finished the assignment. Only contact your instructor about completed assignments if there is a change in the access information.
+**It is therefore very important that you keep up with the Technical Learning Assignments, and seek assistance from the instructor if you are falling behind.**
 
-**A very important note about technical learning assignments**
+In the first class, you will be shown how to create and update a GitHub repository with your Docassemble project, and how to install that project on the Docassemble server. You will provide the instructor with the address for the repository and the address for the installed interview in that first class.
+
+For all subsequent classes, "submitting" your Technical Learning Assignments only requires:
+
+* updating the GitHub repository for your interview, and
+* installing the latest version of your interview on the class Docassemble server
+
+If the addresses for your GitHub repository and your interview do not change from week to week, there is no need to notify your instructor when you are finished the assignment. Only contact your instructor about completed assignments if there is a change in the access information.
+
+**A very important note about technical learning assignments:**
 
 Docassemble behaves in a way that is sometimes counterintuitive, especially for beginners. The best way to learn it is slowly, one piece at a time. Frequently, it will do "weird" things, like ask questions in an order you weren't expecting. **Do not try to fix weird things your interview is doing unless the assignment specifically requires it.** If you try to fix the weird things before you learn why they are happening, and how to best avoid them, you will clutter your interview with code that will later need to be removed.
 
@@ -291,10 +304,22 @@ You will receive full credit for a technical learning assignment that does what 
 
 Resist the urge to change the order in which interview questions are asked until you are clear on how docassemble calculates it.
 
-### The Target
+### The Target - Legal Aid Eligibility
 
 The final goal of the technical learning assignments is an interview which will
 ask the user everthing required to know whether they qualify under Legal Aid Alberta's financial requirements for legal services, to generate an advice memo telling them whether they qualify and why or why not, and to send them a PDF version of that memo by email.
+
+### Demonstration 1
+
+The demonstration for this week will introduce you to:
+
+* GitHub
+* The Docassemble Playground
+* Slack
+* Integrating Docassemble with GitHub
+* Question Blocks
+* Mandatory Question Blocks
+* Inserting Variables in Docassemble Questions
 
 ### Assignment 1 - Hello World
 * Before starting the technical learning assignment you should have completed the following steps in class:
@@ -305,6 +330,19 @@ ask the user everthing required to know whether they qualify under Legal Aid Alb
     * Configure your Docassemble account to synchronize with GitHub.
 * Create a “Hello World” Interview that asks for the user’s name, and displays it back to them in a friendly greeting.
 
+### Demonstration 2
+
+The demonstration for this week will introduce you to:
+
+* The "Objects" Block
+* The "Individual" Object
+* The "DAList" Object
+* Object Attributes
+* Generic Object Questions
+* Yes/No Fields
+* Mutliple-Choice Fields
+* Signature Fields
+
 ### Assignment 2 - Docassemble Basics
 * Using the "objects" initial block, modify your interview to use an “Individual” object to represent the user, and a DAList to rerpesent a list of other Individuals with whom the user lives.
 * Using the “generic object modifier”, create a single question block in your interview file that asks for names of people.
@@ -314,6 +352,16 @@ ask the user everthing required to know whether they qualify under Legal Aid Alb
     * A multiple-choice field that allows the user to select only one option.
     * A signature.
 
+### Demonstration 3
+
+The demonstration for this week will introduce you to:
+
+* Docassemble Attachments
+* Formatting Lists
+* Conditional Formatting
+* Formatting Dates
+* Document Templates
+
 ### Assignment 3 - Document Automation
 * Add a yes or no question to the interview for whether or not the user qualifies for legal aid (this is temporary for this week)
 * Create a document template for an advice memo that includes:
@@ -322,6 +370,15 @@ ask the user everthing required to know whether they qualify under Legal Aid Alb
     * two paragraphs, only one of which is included in any generated document, based on whether or not the person qualifies for legal aid
     * a date value displayed in at least two different date formats
 * Modify your interview so the document is generated and provided for download on the last screen of the interview.
+
+### Demonstration 4
+
+The demonstration for this week will introduce you to:
+
+* How Docassemble Decides Which Question To Ask
+* Code Blocks
+* Conditional Statements in Python
+* Using Mandatory Code Blocks To Control When and Whether Questions Are Asked
 
 ### Assignment 4 - Encoding Rules
 
@@ -357,6 +414,14 @@ This assignment assumes the following rules for eligibility to Legal Aid Alberta
     * If the person says they can afford a lawyer, don't ask them if they have one still acting for them.
     * If the person does not have a laywer, don't ask whether their lawyer is acting for them.
 
+### Demonstration 5
+
+The demonstration for this week will introduce you to:
+
+* DALists of Objects
+* Docassemble Value Objects
+* Using DAList Complete Attribute To Collect information about objects in lists
+
 ### Assignment 5 - Customized List Collection
 
 For this assignment, rule 0 above is modified as follows:
@@ -386,10 +451,17 @@ Family Size | Maximum Income Last 30 Days | Maximum Income Last Year
     * The person's income in the last year
 * These three pieces of information should be requested on a single screen, separate from the screen that asks for the person's name.
 * These three pieces of information should be asked for immediately after the person's name is provided.
-* Add a code block to calculate whether the users is "financially eligible", "marginally financially eligible", or "financially ineligible" based on the rules above.
+* Add a code block to calculate whether the user is "financially eligible", "marginally financially eligible", or "financially ineligible" based on the rules above.
 * Modify the existing code blocks to reflect the change to rule 0.
 * Modify your template to show the asset and income information collected.
 * Modify your template to indicate the user's financial eligibility.
+
+### Demonstration 6
+
+The demonstration for this week will introduce you to:
+
+* Multi-user interviews
+* Sending emails from within Docassemble
 
 ### Assignment 6 - Multi-user Interviews
 * Modify your interview so that immediately before the advice memo is generated, the user is asked to wait for approval while the advice memo is confirmed.
@@ -415,10 +487,19 @@ potentially result in suspicions of cheating, plagiarism, misrepresentation of f
 participation in an offence. Academic dishonesty is a serious offence and can result in suspension or
 expulsion from the University.
 
-
 ## Audio-Visual Recording
 Audio or video recording of lectures,
 labs, seminars or any other teaching environment by students is allowed only with the prior
 written consent of the instructor or as a part of an approved accommodation plan. Recorded
 material is to be used solely for personal study, and is not to be used or distributed for any other
 purpose without prior written consent from the instructor.
+
+# Covid-19 Accommodations
+
+Classes will be held by Zoom video conference. A permanent link for all scheduled classes will be provided by email to your @ualberta.ca email address in advance of the first class.
+
+Some elements of the above plan may be pre-recorded and provided as videos, and assigned in advance.
+
+Zoom videoconference classes will be video recorded by the instructor and made available only to registered students.
+
+Students and instructors are expected to adhere to the Online Code of Conduct provided by the Faculty of Law while participating in videoconference classes.
