@@ -18,6 +18,11 @@ attachments:
       % if len(cats) > 0:
       The cats you told me about include
       ${ cats }.
+      
+      % for c in cats:
+      ${ c } sounds nice.
+      % endfor
+      
       % else:
       You didn't tell me about any cats.
       % endif
