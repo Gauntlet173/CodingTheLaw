@@ -1,0 +1,50 @@
+objects:
+  - user: Individual
+  - cohabs: DAList.using(object_type=Individual)
+---
+generic object: Individual
+question: What is the name?
+fields:
+  - First Name: x.name.first
+  - Second Name: x.name.last
+---
+question: Do you like cats?
+yesno: user.likes_cats
+---
+question: Where have you been?
+fields:
+  - Canada: user.been_to_canada
+    datatype: yesnowide
+  - US: user.been_to_us
+    datatype: yesnowide
+---
+question: Who is your favourite elf?
+field: user.favourite_elf
+choices:
+  - Santa
+  - Will Ferrell
+  - Drizz't
+---
+question: Do you live with anyone?
+yesno: cohabs.there_are_any
+---
+question: Do you live with anyone else?
+yesno: cohabs.there_is_another
+---
+question: Please sign
+signature: user.signature
+---
+mandatory: true
+question: Hi, ${ user }.
+subquestion: |
+  Do you like cats? ${ user.likes_cats }
+  
+  Have you been to Canada? ${ user.been_to_canada }
+  
+  Have you been to US? ${ user.been_to_us }
+  
+  Your favourite elf? ${ user.favourite_elf }
+  
+  Your signature? ${ user.signature }
+  
+  The people who live with you are: ${ cohabs }
