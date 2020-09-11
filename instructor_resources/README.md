@@ -1,5 +1,35 @@
 # Instructor Resources
 
+## Approach to Teaching Technology
+
+This course is not designed to provide a deep theoretical understanding of computer science, which frees you from needing to adhere to
+certain strategies that are good for theoretical understanding, and bad for experiential learning. I have discussed the difficulty of
+teaching technology to law students with other instructors of similar courses, and the impression I have been left with is that my
+approach with this course has allowed students to go further in their learning than is typical. Here is what I think 
+I am doing differently:
+
+* I start with an objective that the students care about. They understand what they will eventually be building, before they learn
+  anything about technology.
+* I do not teach the students anything they don't need to know in order to achieve the objective directly in front of them.
+* I wait for them to need to know something before I explain it.
+* I encourage the students to try things before they are confident whether they will work.
+* I demonstrate failure, and recovery from failure.
+
+In implementation, what this means is that you must not spend any time explaining, in the abstract, what a "variable" is, or what
+Python is, or what YAML is. Teach Docassemble as if it was Microsoft Excel. You click here, you type this, and this neat thing happens.
+Teach the deeper understanding parts when they become necessary, and not before. It means trying things live, and seeking out opportunities
+to react to error messages.
+
+The real-world experience of coding is 95% software that doesn't work yet. It is unhelpful to hide students from it.
+
+## The Difficulty Teaching Technology to Law Students
+
+In my brief experience, the largest difficulty in teaching technology to law students is communicating how imperitive it is that they ask
+for help. Exhorting the students at the start of the semester is insufficient. It is change in the normal expectations that needs to be
+nurtured and made as easy as possible. My current approach is to redefine failure as success. Class participation marks are given for
+sharing error messages received while working on assignments. I will update this document when I have a better idea whether or not that
+works. I am also looking for strategies to reiterate and model, every class, the need to fail visibly.
+
 ## Installing Docassemble For Use In This Course
 
 First, you need access to a server that will run Docassemble. I have used Digital Ocean, and their general "droplet" with 2GB of ram is
