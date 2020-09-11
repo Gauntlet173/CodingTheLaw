@@ -1,0 +1,44 @@
+objects:
+  - cats: DAList
+---
+mandatory: true
+question: Results
+attachments:
+  - name: Document
+    filename: document
+    content: |
+      % if likes_cats:
+      I like cats too, by the way.
+      % else:
+      You don't like cats? what's wrong with you?
+      % endif
+      
+      A cat's the only cat that knows where it's at.
+      
+      % if len(cats) > 0:
+      The cats you told me about include
+      ${ cats }.
+      % else:
+      You didn't tell me about any cats.
+      % endif
+      
+      You were born on ${ format_date(birthday, format='EEEE, MMMM d, yyyy') },
+      which can also be written ${ format_date(birthday, format='yyyy-MM-dd') }.
+---
+question: Do you like cats?
+yesno: likes_cats
+---
+question: Do you know a cat?
+yesno: cats.there_are_any
+---
+question: Do you know another cat?
+yesno: cats.there_is_another
+---
+question: What cat?
+fields:
+  - Cat: cats[i]
+---
+question: What is your birthday?
+fields:
+  - Birthday: birthday
+    datatype: date
