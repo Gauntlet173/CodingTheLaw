@@ -1,9 +1,9 @@
 # Syllabus
-**Law 589 - "Coding the Law", Fall 2020 (Section TBD)  
+**Law 589 A05 - "Coding the Law", Fall 2020 
 University of Alberta Faculty of Law  
-Jason Morris, BA, LLB, LLM (anticipated)  
+Jason Morris, BA, LLB, LLM
 9:00am-11:50am Fridays  
-Room: TBD**
+Room: Zoom**
 
 ## Course Objectives
 Law is not immune to the technological changes that are occurring in the rest of society. As has happened in every other sector of the economy, globalization and technology will result in an increased automation of legal services. Indeed, because of the severity of the access to justice problem in Canada and other jurisdictions, the impetus to automate legal services is stronger than in many areas.
@@ -132,9 +132,7 @@ In this class you will be introduced to the method that Docassemble uses for fig
 
 Technical Learning:	Assignment 2
 
-#### There is no class on September 25, 2020 due to Career Day
-
-#### Class 3 - Automated Document Assembly in Docassemble - October 2, 2020
+#### Class 3 - Automated Document Assembly in Docassemble - September 25, 2020
 
 In this class you will be taught the three fundamental requirements of a document assembly system: variables, conditionals, and loops.
 You will be shown how to replace text in a Word document with these three components. You will create a simple template using these
@@ -142,7 +140,7 @@ components and create a simple interview that generates a document on the basis 
 
 Technical Learning:	Assignment 3
 
-#### Class 4 - Encoding Legal Rules in Docassemble - October 9, 2020
+#### Class 4 - Encoding Legal Rules in Docassemble - October 2, 2020
 
 In this class you will be taught how Docassemble uses "code blocks" to allow you to set out legal logic that can be used to answer questions based on existing knowledge instead of asking for information from the user. You will also get instruction on how to use
 code blocks to control the order of questions, and how to modify code blocks and templates so as to exclude questions that are not relevant.
@@ -150,14 +148,14 @@ code blocks to control the order of questions, and how to modify code blocks and
 Technical Learning:	Assignment 4  
 Major Project: 		Students groups should be determined by the end of this class.
 
-#### Class 5 - Advanced Docassemble Lists - October 16, 2020
+#### Class 5 - Advanced Docassemble Lists - October 9, 2020
 
 In this class you will be shown how you can use Docassemble and Python features in order to collect more complicated information about
 individuals or other objects in a list, and how to do calculations about all of the elements in the list at the same time, called aggregate functions. You will also be shown various basic mathematical features of Python to allow you to complete the technical learning assignment, such as value comparisons.
 
 Technical Learning:	Assignment 5
 
-#### Class 6 - Multi-User Interviews in Docassemble - October 23, 2020
+#### Class 6 - Multi-User Interviews in Docassemble - October 16, 2020
 
 In this final class of the first phase, you will be shown how to create a multi-user interview, allowing you to create a workflow
 between, for example, a client and a lawyer. You will also learn the security and confidentiality implications of moving away from docassemble's single-user
@@ -183,7 +181,7 @@ Assigned readings are with regard to the best practices topics only. Guest speak
 
 Based on factors like student interest, and the major projects selected, this list of topics and assigned readings are subject to change.
 
-#### Class 7  - October 30, 2020
+#### Class 7  - October 23, 2020
 
 Technical Topic: Automated Document Generation and Client Interview Tools
 
@@ -197,7 +195,7 @@ Required Reading:
 * [The Montreal Declaration on Open Access to Law](https://www.canlii.org/en/info/mtldeclaration.html)
 * [How I Changed the Law with a GitHub Pull Request](https://arstechnica.com/tech-policy/2018/11/how-i-changed-the-law-with-a-github-pull-request/)
 
-#### Class 8 - November 6, 2020
+#### Class 8 - October 30, 2020
 
 Technical Topic: "Rules as Code" and "Smart Contracts": Rules-Based Artificial Intelligence
 
@@ -211,7 +209,7 @@ Required Reading:
 
 * [Substantive Legal Software Quality: A Gathering Storm?](http://delivery.acm.org/10.1145/3330000/3326706/p52-lauritsen.pdf?ip=142.244.5.174&id=3326706&acc=ACTIVE%20SERVICE&key=FD0067F557510FFB%2EE7ED0E691902343F%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35&__acm__=1570231240_3dd3c719bf0b938c88c55623a42c8ef7)  
 
-#### Class 9 - November 13, 2020
+#### Class 9 - November 6, 2020
 
 Technical Topic: eDiscovery
 
@@ -228,7 +226,7 @@ Required Reading:
 Major Project: 		Design Specifications due by the end of this class.
 
 
-#### Class 10 - November 20, 2020
+#### Class 10 - November 13, 2020
 
 Technical Topic: Natural Language Processing and Generation
 
@@ -242,7 +240,7 @@ Required Reading:
 * [Early Predictability of Asylum Court Decisions](https://doi.org/10.1145/3086512.3086537)
 
 
-#### Class 11 - November 27, 2020
+#### Class 11 - November 20, 2020
 
 Technical Topic: Online Dispute Resolution
 
@@ -255,8 +253,11 @@ Required Reading:
 
 * [Law Firm Accessibility Standards](https://lawyerist.com/client-service/accessibility-standards/)
 
+#### Class 12 - "Hackathon" - November 27, 2020
 
-#### Class 12 - "Pitches" - December 4, 2020
+This class will be reserved for students to spend time seeking assistance from the instructor in completing their major projects.
+
+#### Class 13 - "Pitches" - December 4, 2020
 
 Project: All major projects must be submitted to the instructor electronically in their final version by the start of this class.
 
