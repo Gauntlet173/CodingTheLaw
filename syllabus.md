@@ -288,12 +288,13 @@ by adding features to it that were demonstrated that week. As such, each week's 
 
 **It is therefore very important that you keep up with the Technical Learning Assignments, and seek assistance from the instructor if you are falling behind.**
 
-In the first class, you will be shown how to create and update a GitHub repository with your Docassemble project, and how to install that project on the Docassemble server. You will provide the instructor with the address for the repository and the address for the installed interview in that first class.
+In the first class, you will be shown how to create and update a GitHub repository with your Docassemble project. You will provide the instructor with the address for the repository and the address for the interview in that first class.
 
-For all subsequent classes, "submitting" your Technical Learning Assignments only requires:
+The address for your github repository will be `github.com/[Your GitHub UserName]/docassemble-[your package name]`.
 
-* updating the GitHub repository for your interview, and
-* installing the latest version of your interview on the class Docassemble server
+The address for your interview can be found by right-clicking on the "Share" link in the docassemble playground, and copying the link address.
+
+For all subsequent classes, "submitting" your Technical Learning Assignments only requires updating the GitHub repository for your interview.
 
 If the addresses for your GitHub repository and your interview do not change from week to week, there is no need to notify your instructor when you are finished the assignment. Only contact your instructor about completed assignments if there is a change in the access information.
 
