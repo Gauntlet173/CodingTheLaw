@@ -1,0 +1,177 @@
+mandatory: true
+code: |
+  # This extra mandatory block breaks the rules, but is required to show how
+  # docassemble's idempotent code flow blocks work.
+  first_tries = 0
+  second_tries = 0
+  third_tries = 0
+---
+mandatory: true
+code: |
+  # This is a code-flow block.
+  
+  # Usually, there should be only one mandatory code block in your interview,
+  # which is the code-flow block.
+  
+  # Usually, there should be only one mandatory question block in your interview,
+  # which is the final screen.
+  
+  # When you simply name a python variable, python tries to return the value
+  # of that variable. If it can't, docassemble notices, and asks the user to
+  # provide a value for that variable. So, you can make Docassemble ask a question,
+  # even if the values collected are never used, by nameing one of the variables
+  # collected in that question block in a mandatory code block.
+  
+  likes_cats # this value will be asked, but not used anywhere else than here.
+  
+  # This technique is usually used for controlling the order in which questions
+  # are asked.
+  
+  ########### This section is added very late, to show that disjunctions don't
+  ########### work as expected. Despite the fact we know the answer to this is
+  ########### yes, you will still get asked about your ability to wield a
+  ########### light saber.
+  
+  thinks_rogue_one_is_great
+  ########### So you need to choose carefully how to order things in python
+  ########### 'or' statements. Put the thing you are most likely to already
+  ########### know on the left.
+  
+  ######  This section is added later to show how you can insert the picard
+  ###### questions early, if you want.
+  # You can decide whether or not to ask a question in the code-flow block by
+  # using conditional statements in Python, which look identical to the syntax
+  # for conditional statements in generating documents.
+  
+  #if like_star_trek:
+  #  favourite_captain
+    
+  # Note that in order to figure out whether or not to ask about favourite captain,
+  # docassemble needs to have a value for like_star_trek, which it doesn't. So it
+  # will ask that first. You could name `like_star_trek` on its own line before this
+  # and that may be clearer.
+  
+  # like_star_trek
+  # if like_star_trek:
+  #   favourite_captain
+  
+  # This way, if you want to change when like_star_trek is asked, you can just move
+  # that line up or down in your code flow block.
+  #######
+  
+  
+  
+  # It is very important to understand that Docassemble's code flow block is
+  # idempotent.  To demonstrate, look at how often these log messages are
+  # displayed while you go through the interview.
+  
+  first_tries = first_tries + 1  # This line does something. It changes the value.
+  # log("Trying to get value for first", "info")
+  first             # This line doesn't do anything. 
+  second_tries = second_tries + 1
+  # log("Trying to get value for second", "info")
+  second
+  third_tries = third_tries + 1
+  # log("Trying to get value for third", "info")
+  third
+---
+mandatory: true
+question: Results
+subquestion: |
+  This is where I will display the results.
+  
+  I ran the code `first` ${ first_tries } times.
+  
+  I ran the code `second` ${ second_tries } times.
+  
+  I ran the code `third` ${ third_tries } times.
+  
+  So **don't put anything in a code flow block that actually DOES anything to any
+  of your information**, just name variables to force whether and when questions
+  are asked.
+  
+  % if good_person:
+  You are a good person, and I'm happy to know you.
+  % else:
+  You're not a good person, but I'm still happy to know you.
+  % endif
+  
+  
+  Details are [here](https://docassemble.org/docs/logic.html#howitworks)
+  
+  Basically, every time a screen loads:
+  
+  0. Docassemble does all "initial" things, every time.
+  1. Docassemble then attempts all **incomplete** and **mandatory** things, starting at the top of the file.
+  2. If in the course of doing something it finds a variable it doesn't know,
+     it tries to find a question or code block or line in an objects block 
+     that will define that variable.
+     Then it **starts again from the very beginning**.
+  3. When it is searching for a question or code block to define a variable, it searches from most specific
+     version to least specific version of that variable.
+  4. If it finds multiple options with the same specificity, it uses the one
+     that appears LAST in the file.
+---
+question: Do you like cats?
+yesno: likes_cats
+---
+field: first
+question: This is the first question.
+---
+field: second
+question: This is the second question.
+---
+field: third
+question: This is the third question.
+---
+question: Do you like Star Trek?
+yesno: like_star_trek
+---
+question: Who is your favourite Captain?
+fields:
+  - Favourite Captain: favourite_captain
+    choices:
+      - Picard
+      - Janeway
+      - Sisko
+      - Pike
+---
+code: |
+  # Note that this is not a mandatory block. It will be used to calculate the
+  # variables it sets.
+  
+  if (like_star_trek and favourite_captain == "Picard") or jedi:
+    good_person = True
+  else:
+    good_person = False
+    
+  # Note that it MUST set a value for the variable. If it only sets "true", the
+  # variable remains unknown, and docassemble goes into an infinite loop trying
+  # to calculate it over and over.
+  
+  # So to do a calculation of a legal outcome, do it in a non-mandatory code block,
+  # do only one variable per code block, and make sure the variable ends up with
+  # a value one way or the other.
+---
+code: |
+  # This code block determines whether or not you are a jedi.
+  
+  # When the code block above needs to calculate a value for "jedi" it will come
+  # here to do it.
+  
+  if can_use_lightsaber or thinks_rogue_one_is_great:
+    jedi = True
+  else:
+    jedi = False
+---
+question: Can you use a lightsaber?
+yesno: can_use_lightsaber
+---
+question: Do you think Rogue One was great?
+yesno: thinks_rogue_one_is_great
+---
+question: Can you weild a lightsaber?
+subquestion: |
+  Notice that this question is used instead of the one two blocks above, because
+  it defines the same variable, but appears lower in the file.
+yesno: can_use_lightsaber
