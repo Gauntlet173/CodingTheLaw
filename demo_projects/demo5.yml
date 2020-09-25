@@ -1,0 +1,93 @@
+objects:
+  - jedi: DAList.using(object_type=Individual, complete_attribute="complete")
+  - jedi[i].income : Value
+---
+code: |
+  # This is a block that is used to "complete" elements in the jedi list.
+  # The complete_attribute value which can be set on the DAList object tells
+  # docassemble which single object property must have a value before the
+  # object in the list is considered complete. You can then use a code
+  # block that searches for generic jedi list objects' complete attribute
+  # and use that code block to name the things that need to be collected and
+  # the order.
+  
+  jedi[i].name.first
+  
+  # Note that you can remove the above line, because the name is used in the
+  # question for sith_tendencies. If it was not, and you left out the above
+  # line, the name of the jedi would not be collected until it was needed,
+  # which is when generating the last screen.
+  
+  jedi[i].sith_tendencies
+  # Note that when sith_tendencies is asked for, lightsaber colour is asked, too.
+  # You only need to include one element per screen to force a screen to appear.
+  
+  jedi[i].complete = True
+  
+  # Now an object in the list will not be considered completely collected until
+  # this code block is run. And this code block forces Docassemble to ask for
+  # other pieces of information before it can set the item as complete.
+---
+mandatory: true
+question: Results
+subquestion: |
+  % if len(jedi) > 0:
+  
+  % for j in jedi:
+  
+  You know about ${ j }, who uses a ${ j.lightsabre_colour } 
+  % if j.sith_tendencies:
+  blade and has sith tendencies.
+  % else:
+  blade.
+  % endif
+  
+  % if j.income.exists:
+  They currently earn ${ currency(j.income) } per year.
+  % endif
+  
+  % endfor
+  % else:
+  You don't know any Jedi.
+  % endif
+  
+  The total salary is ${ currency(total_income) }.
+---
+question: Know any Jedi?
+yesno: jedi.there_are_any
+---
+question: Know any other Jedi?
+yesno: jedi.there_is_another
+---
+generic object: Individual
+question: |
+  What is the ${ x.object_possessive('name') }?
+fields:
+  - First Name: x.name.first
+  - Last Name: x.name.last
+---
+question: |
+  What else do you know about ${ jedi[i] }?
+fields:
+  - Light Sabre Colour: jedi[i].lightsabre_colour
+    choices:
+      - Blue
+      - Red
+      - Green
+      - Purple
+      - Black?
+  - Has Sith Tendencies?: jedi[i].sith_tendencies
+    datatype: yesnowide
+  - Has Income: jedi[i].income.exists
+    datatype: yesnowide
+  - Annual Salary: jedi[i].income.value
+    datatype: currency
+    show if: jedi[i].income.exists
+---
+reconsider: True
+code: |
+  total_income = 0
+  for j in jedi:
+    if j.income.exists:
+      total_income += j.income.value
+---
