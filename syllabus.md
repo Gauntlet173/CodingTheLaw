@@ -365,10 +365,17 @@ The demonstration for this week will introduce you to:
 * Document Templates
 
 ### Assignment 3 - Document Automation
+
+**NB: From this assignment forward, do not remove anything from prior assignments unless specifically instructed.
+Each assignment builds on the last.**
+
+So, for example, this assignment should still use a DAList of Individual objects to collect the list of people with whom the
+user lives.
+
 * Add a yes or no question to the interview for whether or not the user qualifies for legal aid (this is temporary for this week)
 * Create a document template for an advice memo that includes:
     * the user’s name,
-    * the list of family members displayed in a grammatically correct way (for example, "You live with Jane, Bob, and Sam.")
+    * the list of people with whom the user lives, displayed in a grammatically correct way (for example, "You live with Jane, Bob, and Sam.")
     * two paragraphs, only one of which is included in any generated document, based on whether or not the person qualifies for legal aid
     * a date value displayed in at least two different date formats
 * Modify your interview so the document is generated and provided for download on the last screen of the interview.
@@ -408,7 +415,8 @@ This assignment assumes the following rules for eligibility to Legal Aid Alberta
 * Modify your template to inform the user of all the information that they entered, but only if they entered it.
 * Modify your template so that the "you qualify" and "you do not qualify" paragraphs appear based on the variable that indicates
   whether the user is eligible to receive legal aid services.
-* Remove the question from your interview that asks whether the user is eligible.
+* Remove the question from your interview added in TLA3 that asks whether the user is eligible.
+* Remove any questions remaining from TLA2 that are not being used to generate the document or calculate eligibility.
 * Modify the interview so that only one question or code block is marked as mandatory.
 * Using the code blocks in your interview (not the question blocks), make sure the following questions are not asked in the follow circumstances:
     * If you know the user has received prior assistance, do not ask about the nature of the matter or its location or the
