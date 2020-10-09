@@ -1,0 +1,96 @@
+default role: client
+code: |
+  # This block will be run every screen, and decides what roles the current
+  # user has.
+  multi_user = True
+  reviewer_email = "PUT EMAIL ADDRESS HERE"
+  role = 'client'
+  if user_logged_in() and user_info().email == reviewer_email:
+    role = 'reviewer'
+---
+mandatory: True
+code: |
+  # Code-Flow Block
+  
+  # first, find out what the request is
+  request
+  
+  # once we have a request, send an email to the reviewer
+  request_notification_sent
+  
+  # then get the response
+  reviewer_response
+  
+  # Then notify the user
+  response_notification_sent
+---
+event: role_event
+question: Waiting on Another User
+subquestion: |
+  This screen will be displayed instead of any screen for which the current user
+  does not have the required role.
+  
+  % if 'client' in role_needed:
+  We are waiting for the client, and you are not the client.
+  % elif 'reviewer' in role_needed:
+  We are waiting for the reviewer, and you are not the reviewer.
+  % endif
+  
+  Please have them go to [${ interview_url() }](${ interview_url() }) to continue.
+  
+  (or, an email will be sent when it is possible to continue)
+  
+  Press the **Check** button below to refresh.
+buttons:
+  - Check: refresh
+---
+question: Just ask for something.
+fields:
+  - Your Email Address: email_address
+  - Request: request
+---
+role: reviewer
+question: Response
+subquestion: |
+  The client said ${ request }.
+  Do you approve?
+yesno: reviewer_response
+---
+mandatory: True
+role:
+  - client
+  - reviewer
+question: Review Complete
+subquestion: |
+  The user provided the request: ${ request }.
+  
+  That input was sent to the reviewer for review, who
+  % if reviewer_response:
+  approved
+  % else:
+  did not approve
+  % endif
+  the request.
+---
+code: |
+  # This is not in the code-flow block, because if it was, it would
+  # get run an unpredictable number of times. Here, it will be run
+  # once, and then never again, if email_sent retains its value.
+  request_notification_sent = send_email(to=reviewer_email, template=request_notification)
+---
+template: request_notification
+subject: |
+  New request: ${ request }
+content: |
+  To respond to this request, please 
+  [click here](${ interview_url() }).
+---
+code: |
+  response_notification_sent = send_email(to=email_address,template=response_notification)
+---
+template: response_notification
+subject: |
+  Response Received
+content: |
+  To see the response received from the reviewer, please
+  [click here](${ interview_url() }).
