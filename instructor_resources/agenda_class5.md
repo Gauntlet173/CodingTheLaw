@@ -1,6 +1,7 @@
 # Agenda Class 5
 
 * Problems people had with TLA4
+  * Making questions NOT appear.
 * Demo 5
   * Collecting Lists
     * Collect a list of Known Jedi
