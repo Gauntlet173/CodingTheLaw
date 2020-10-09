@@ -418,10 +418,12 @@ This assignment assumes the following rules for eligibility to Legal Aid Alberta
 * Remove the question from your interview added in TLA3 that asks whether the user is eligible.
 * Remove any questions remaining from TLA2 that are not being used to generate the document or calculate eligibility.
 * Modify the interview so that no more than one question is marked as mandatory, and no more than one code block is marked as mandatory.
-* Using the code blocks in your interview (not the question blocks), make sure the following questions are not asked in the follow circumstances:
+* Using the code blocks in your interview (not the question blocks),
+  Using the code blocks and conditional statements in the content of your document (not question block modifiers)
+  make sure the following questions are not asked in the follow circumstances:
     * If you know the user has received prior assistance, do not ask about the nature of the matter or its location or the
       person's residence.
-    * If the person says they can afford a lawyer, don't ask them if they have one still acting for them.
+    * If the person says they can afford a lawyer, don't ask them if they have one, or whether it is still acting for them.
     * If the person does not have a laywer, don't ask whether their lawyer is acting for them.
 
 ### Demonstration 5
