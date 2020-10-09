@@ -482,7 +482,7 @@ The demonstration for this week will introduce you to:
 * When the second user gets to the interview, they should be presented with a screen in which they can view the document and indicate whether or not they approve of the memo.
 * Once the second user has indicated if they approve the memo or not, the original user should receive an email with a link saying that the response has been received, and providing a link to go back to the interview.
 * When the first user returns to the interview, they should either see a message saying that approval was refused, or be able to download the memo as usual.
-* When this is working, set the second user’s email address to the instructor's email address, and have the email’s subject line begin with “LAW589 Assignment 6”.
+* When this is working, set the second user’s email address to the instructor's email address, and have the email’s subject line begin with “LAW589 Assignment 6”. Run the interview at least once with these settings, so that the instructor will receive at least one email asking them to review a memo inside your interview.
 
 # General
 
