@@ -1,5 +1,6 @@
 # Class 6 Agenda
 
+* Progress on Clients
 * Problems with TLA5
 * Demo 6
   * Multi-User Interviews and Roles
